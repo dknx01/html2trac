@@ -8,6 +8,9 @@ class html2trac_prepare
                 ->setTransformedData(html2trac_store::getInstance()->getInputData());
     }
     
+    /**
+     * extract the body part if exists
+     */
     public function extractBody()
     {
         $data = html2trac_store::getInstance()->getTransformedData();

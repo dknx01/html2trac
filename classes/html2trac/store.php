@@ -8,7 +8,7 @@ class html2trac_store
     
     /**
      * 
-     * @param type $input
+     * @param string $input
      * @return html2trac_store
      */
     static public function getInstance($input = null)
@@ -24,11 +24,11 @@ class html2trac_store
     
     /**
      * 
-     * @param type $input
+     * @param string $input
      */
     protected function __construct($input)
     {
-        $this->inputData = $input;
+        $this->setInputData($input);
     }
     
     /**
@@ -42,18 +42,21 @@ class html2trac_store
     
     /**
      * 
-     * @param type $inputData
+     * @param string $inputData
      * @return \html2trac_store
      */
     public function setInputData($inputData)
     {
+        if (!is_string($inputData)) {
+            throw new Exception('Input data must be a string');
+        }
         $this->inputData = $inputData;
         return $this;
     }
 
     /**
      * 
-     * @return type
+     * @return string
      */
     public function getTransformedData()
     {
@@ -62,7 +65,7 @@ class html2trac_store
 
     /**
      * 
-     * @param type $transformedData
+     * @param string $transformedData
      * @return \html2trac_store
      */
     public function setTransformedData($transformedData)
