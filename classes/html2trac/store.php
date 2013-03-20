@@ -1,13 +1,28 @@
 <?php
-
+/**
+ * object to store the data
+ * @author erik
+ */
 class html2trac_store
 {
+    /**
+     *the instance
+     * @var html2trac_store
+     */
     static private $instance = null;
+    /**
+     *the original input data
+     * @var string
+     */
     protected $inputData = null;
+    /**
+     * the (partly) transformed data
+     * @var string
+     */
     protected $transformedData = null;
     
     /**
-     * 
+     * gets the instance or create one
      * @param string $input
      * @return html2trac_store
      */
@@ -18,12 +33,14 @@ class html2trac_store
         }
         return self::$instance;
     }
-    
+    /**
+     * overwrite clone
+     */
     private function __clone()
     {}
     
     /**
-     * 
+     * construcor
      * @param string $input
      */
     protected function __construct($input)
@@ -32,7 +49,7 @@ class html2trac_store
     }
     
     /**
-     * 
+     * get the input data
      * @return type
      */
     public function getInputData()
@@ -41,7 +58,7 @@ class html2trac_store
     }
     
     /**
-     * 
+     * set the input data
      * @param string $inputData
      * @return \html2trac_store
      */
@@ -55,7 +72,7 @@ class html2trac_store
     }
 
     /**
-     * 
+     * get the transformed data
      * @return string
      */
     public function getTransformedData()
@@ -64,7 +81,7 @@ class html2trac_store
     }
 
     /**
-     * 
+     * set the transformed data
      * @param string $transformedData
      * @return \html2trac_store
      */

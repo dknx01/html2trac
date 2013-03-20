@@ -1,8 +1,14 @@
 <?php
-
+/**
+ * the main class to transform a html string into a trac string
+ * @author erik
+ */
 class html2trac
 {
-    
+    /**
+     * the constructor
+     * @param string $input
+     */
     public function __construct($input = null)
     {
         html2trac_store::getInstance($input);

@@ -1,4 +1,15 @@
 <?php
+
+/**
+ * Just an example page
+ * @author erik
+ */
+
+/**
+ * my auto loader
+ * @param string $classname
+ * @throws Exception
+ */
 function MyAutoloader($classname)
 {
     $filename  = realpath(__DIR__)  . '/../classes/' . str_replace('_', '/', $classname);

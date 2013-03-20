@@ -1,7 +1,13 @@
 <?php
-
+/**
+ * prepare the data
+ * @author erik
+ */
 class html2trac_prepare
 {
+    /**
+     * the constructor
+     */
     public function __construct()
     {
         html2trac_store::getInstance()

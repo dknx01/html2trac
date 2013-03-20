@@ -1,4 +1,8 @@
 <?php
+/**
+ * tranform all tags with equal trac format
+ * @author erik
+ */
 
 class html2trac_transformTags
 {
