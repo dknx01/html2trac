@@ -1,7 +1,7 @@
 <?php
 /**
  * tranform all tags with equal trac format
- * @author erik
+ * @author dknx01
  */
 
 class html2trac_transformTags

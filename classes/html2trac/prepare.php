@@ -1,7 +1,7 @@
 <?php
 /**
  * prepare the data
- * @author erik
+ * @author dknx01
  */
 class html2trac_prepare
 {

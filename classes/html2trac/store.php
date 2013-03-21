@@ -1,7 +1,7 @@
 <?php
 /**
  * object to store the data
- * @author erik
+ * @author dknx01
  */
 class html2trac_store
 {

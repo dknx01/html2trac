@@ -1,7 +1,7 @@
 <?php
 /**
  * the main class to transform a html string into a trac string
- * @author erik
+ * @author dknx01
  */
 class html2trac
 {

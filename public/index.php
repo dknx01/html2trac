@@ -2,7 +2,7 @@
 
 /**
  * Just an example page
- * @author erik
+ * @author dknx01
  */
 
 /**
