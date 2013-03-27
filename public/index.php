@@ -22,10 +22,11 @@ function MyAutoloader($classname)
 spl_autoload_extensions(".php"); // comma-separated list
 spl_autoload_register('MyAutoloader');
 $input = file_get_contents('../test.html');
-$html2trac = new html2trac($input)
+$html2trac = new html2trac($input);
+$html2trac->transform();
 ?>
 <hr>
 <pre>
-<?php    echo htmlentities($html2trac->transform());?>
+<?php    //echo htmlentities($html2trac->transform());?>
 </pre>
 <hr>
